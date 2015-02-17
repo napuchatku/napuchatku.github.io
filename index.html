@@ -165,6 +165,29 @@ var contentString = '<div id="content">'+
           infowindow.open(map, marker1);
         });
 
+        google.maps.event.addListener(map, 'zoom_changed', function() {
+            var z = map.getZoom();
+            console.log(z);
+
+            // _.each(map_shapes, function(s) {
+
+            //     if (! $.isFunction(s.shape.getPosition)) return;
+
+            //     var w = s.shape.getIcon().size.width;
+            //     var h = s.shape.getIcon().size.height;
+
+            //     s.shape.setIcon(new google.maps.MarkerImage(
+            //         s.shape.getIcon().url, null, null, null, new google.maps.Size(
+            //             w - Math.round(w / 3 * (last_zoom - z)),
+            //             h - Math.round(h / 3 * (last_zoom - z)))
+            //         )
+            //     );
+
+            // });
+
+            // last_zoom = z;
+        });
+
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
