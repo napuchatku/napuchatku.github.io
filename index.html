@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <style type="text/css">
       html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
     </style>
     <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhs1vdyyg0madb0mQgJbZ5IbJ4cqVDNHE&language=pl">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhs1vdyyg0madb0mQgJbZ5IbJ4cqVDNHE&amp;language=pl">
     </script>
     <script type="text/javascript">
+      'use strict';
       function initialize() {
-
         var styleArray = [
           {
             featureType: "road",
@@ -19,175 +20,161 @@
           }
         ];
 
+        var icon1 = {
+          path: 'M32.333,0C14.462,0,0,14.519,0,32.39c0,20.343,14.711,27.647,20.052,35.519S31.39,84.438,32.333,100  c0.944-15.518,6.19-23.074,11.995-32.092c5.806-9.018,20.395-17.648,20.395-35.519S50.203,0,32.333,0z M32.361,26.114  c3.201,0,5.797,2.595,5.797,5.796s-2.596,5.796-5.797,5.796s-5.796-2.595-5.796-5.796S29.16,26.114,32.361,26.114z',
+          strokeColor: '#031634',
+          fillColor: '#031634',
+          fillOpacity: 1,
+          scale: .3,
+          anchor: {x: 33.33333, y:105}
+        };
+
+        var icon2 = {
+          path: 'M32.333,0C14.462,0,0,14.519,0,32.39c0,20.343,14.711,27.647,20.052,35.519S31.39,84.438,32.333,100  c0.944-15.518,6.19-23.074,11.995-32.092c5.806-9.018,20.395-17.648,20.395-35.519S50.203,0,32.333,0z M32.361,26.114  c3.201,0,5.797,2.595,5.797,5.796s-2.596,5.796-5.797,5.796s-5.796-2.595-5.796-5.796S29.16,26.114,32.361,26.114z',
+          strokeColor: '#2272f2',
+          fillColor: '#2272f2',
+          fillOpacity: 1,
+          scale: .3,
+          anchor: {x: 33.33333, y:105}
+        };
+
+        var locationsArray = [
+          {
+            position: { lat: 52.239876, lng: 21.018622}, 
+            title:"Warszawa",
+            icon: icon1
+          },
+          {
+            position: { lat: 52.167279, lng: 22.299210},
+            title:"Siedlce",
+            icon: icon1
+          },
+          {
+            position: { lat: 51.247131, lng: 22.576816},
+            title:"Lublin",
+            icon: icon1
+          },
+          {
+            position: { lat: 50.722850, lng: 23.254177},
+            title:"Zamość",
+            icon: icon1
+          },
+          {
+            position: { lat: 53.779764, lng: 20.477715},
+            title:"Olsztyn",
+            icon: icon1
+          },
+          {
+            position: { lat: 53.123009, lng: 18.022390},
+            title:"Bydgoszcz",
+            icon: icon2
+          },
+          {
+            position: { lat: 54.682312, lng: 25.261172},
+            title:"Wilno",
+            icon: icon2
+          },
+          {
+            position: { lat: 52.462489, lng: 16.923638},
+            title:"Poznań",
+            icon: icon2
+          },
+          {
+            position: { lat: 53.128861, lng: 23.179412},
+            title:"Białystok",
+            icon: icon1
+          },
+          {
+            position: { lat: 50.261982, lng: 19.037405},
+            title:"Katowice",
+            icon: icon2
+          },
+          {
+            position: { lat: 53.206056, lng: 22.774532},
+            title:"Tykocin",
+            icon: icon2
+          },
+          {
+            position: { lat: 53.204882, lng: 23.340239},
+            title:"Supraśl",
+            icon: icon2
+          },
+          {
+            position: { lat: 53.882386, lng: 21.354484},
+            title:"Muntowo",
+            icon: icon1
+          },
+          {
+            position: { lat: 52.3577848, lng: 22.871947},
+            title:"Kózki",
+            icon: icon2
+          },
+          {
+            position: { lat: 52.4168014, lng: 23.007973},
+            title:"Góra Grabarka",
+            icon: icon2
+          }
+        ];
+
         var mapOptions = {
           center: { lat: 52.239876, lng: 21.018622},
-          zoom: 7,
+          zoom: 6,
           mapTypeId: google.maps.MapTypeId.TERRAIN,
           styles: styleArray
         };
+
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
 
-        var icon1 = 'marker_icon_1.svg';
-        var icon2 = 'marker_icon_2.svg';
+        var markers = [];
+        for (var i = 0; i < locationsArray.length; i++) {
+          markers[i] = new google.maps.Marker(
+              {
+                position: locationsArray[i].position,
+                title: locationsArray[i].title,
+                icon: locationsArray[i].icon,
+                map: map,
+              }
+            );
+        }
 
-        var marker0 = new google.maps.Marker({
-          position: { lat: 52.239876, lng: 21.018622},
-          map: map,
-          title:"Warszawa",
-          icon: icon1
-        });
-
-        var marker1 = new google.maps.Marker({
-          position: { lat: 52.167279, lng: 22.299210},
-          map: map,
-          title:"Siedlce",
-          icon: icon1
-        });
-
-        var marker2 = new google.maps.Marker({
-          position: { lat: 51.247131, lng: 22.576816},
-          map: map,
-          title:"Lublin",
-          icon: icon1
-        });
-
-        var marker3 = new google.maps.Marker({
-          position: { lat: 50.722850, lng: 23.254177},
-          map: map,
-          title:"Zamość",
-          icon: icon1
-        });
-
-        var marker4 = new google.maps.Marker({
-          position: { lat: 53.779764, lng: 20.477715},
-          map: map,
-          title:"Olsztyn",
-          icon: icon1
-        });   
-
-        var marker5 = new google.maps.Marker({
-          position: { lat: 53.123009, lng: 18.022390},
-          map: map,
-          title:"Bydgoszcz",
-          icon: icon2
-        });  
-
-        var marker6 = new google.maps.Marker({
-          position: { lat: 54.682312, lng: 25.261172},
-          map: map,
-          title:"Wilno",
-          icon: icon2
-        });
-
-        var marker7 = new google.maps.Marker({
-          position: { lat: 52.462489, lng: 16.923638},
-          map: map,
-          title:"Poznań",
-          icon: icon2
-        });
-
-        var marker8 = new google.maps.Marker({
-          position: { lat: 53.128861, lng: 23.179412},
-          map: map,
-          title:"Białystok",
-          icon: icon1
-        });
-
-        var marker9 = new google.maps.Marker({
-          position: { lat: 50.261982, lng: 19.037405},
-          map: map,
-          title:"Katowice",
-          icon: icon2
-        });    
-
-        var marker10 = new google.maps.Marker({
-          position: { lat: 53.206056, lng: 22.774532},
-          map: map,
-          title:"Tykocin",
-          icon: icon2
-        });         
-
-        var marker11 = new google.maps.Marker({
-          position: { lat: 53.204882, lng: 23.340239},
-          map: map,
-          title:"Supraśl",
-          icon: icon2
-        });  
-
-        var marker12 = new google.maps.Marker({
-          position: { lat: 53.882386, lng: 21.354484},
-          map: map,
-          title:"Muntowo",
-          icon: icon1
-        });  
-
-        var marker13 = new google.maps.Marker({
-          position: { lat: 52.3577848, lng: 22.871947},
-          map: map,
-          title:"Kózki",
-          icon: icon2
-        });  
-
-        var marker14 = new google.maps.Marker({
-          position: { lat: 52.4168014, lng: 23.007973},
-          map: map,
-          title:"Góra Grabarka",
-          icon: icon2
-        });  
-
-var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
-      '</div>'+
-      '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-        
-        google.maps.event.addListener(marker1, 'click', function() {
-          infowindow.open(map, marker1);
-        });
+            function getUpdatedScale(zoomLevel){
+              var scale; 
+              if (zoomLevel < 7) {
+                scale = .3;
+              } 
+              else if(zoomLevel < 12) {
+                scale = 1;
+              }
+              else {
+                scale = 3;
+              };
+              return scale;
+            };
 
         google.maps.event.addListener(map, 'zoom_changed', function() {
             var z = map.getZoom();
             console.log(z);
 
-            // _.each(map_shapes, function(s) {
+            var updatedScale = getUpdatedScale(z);
 
-            //     if (! $.isFunction(s.shape.getPosition)) return;
-
-            //     var w = s.shape.getIcon().size.width;
-            //     var h = s.shape.getIcon().size.height;
-
-            //     s.shape.setIcon(new google.maps.MarkerImage(
-            //         s.shape.getIcon().url, null, null, null, new google.maps.Size(
-            //             w - Math.round(w / 3 * (last_zoom - z)),
-            //             h - Math.round(h / 3 * (last_zoom - z)))
-            //         )
-            //     );
-
-            // });
-
-            // last_zoom = z;
+            for (var i = 0; i < markers.length; i++) {
+              markers[i].setIcon(
+                {
+                path: markers[i].getIcon().path,
+                strokeColor: markers[i].getIcon().strokeColor,
+                fillColor: markers[i].getIcon().fillColor,
+                anchor: {
+                  x: markers[i].getIcon().anchor.x,
+                  y: markers[i].getIcon().anchor.y
+                },
+                scale: updatedScale,
+                fillOpacity: 1,
+              }
+              );
+              console.log(updatedScale);
+            }
         });
-
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
