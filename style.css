@@ -1,8 +1,22 @@
 html, 
 body, 
 #map-canvas { 
-	height: 
-	100%; 
+	height: 100%; 
 	margin: 0; 
 	padding: 0;
+}
+
+#summary-panel {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	height: 300px;
+	width: 300px;
+	z-index: 9999;
+}
+
+h1 {
+	font-size: 1rem;
+	clear: both;
+	width: 100%;
 }

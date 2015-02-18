@@ -24,8 +24,8 @@ var locationsArray = [
     icon: icon1,
     dates: [
       {
-        from: new Date(2014, 12, 10),
-        to: new Date(2014, 12, 12)
+        from: new Date(2015, 1, 3),
+        to: new Date(2015, 1, 6)
       }
     ]
   },
@@ -38,8 +38,8 @@ var locationsArray = [
     icon: icon1,
     dates: [
       {
-        from: new Date(2014, 12, 10),
-        to: new Date(2014, 12, 12)
+        from: new Date(2015, 1, 5),
+        to: new Date(2015, 1, 5)
       }
     ]
   },
@@ -52,8 +52,8 @@ var locationsArray = [
     icon: icon1,
     dates: [
       {
-        from: new Date(2014, 12, 10),
-        to: new Date(2014, 12, 12)
+        from: new Date(2014, 11, 11),
+        to: new Date(2014, 11, 11)
       }
     ]
   },
@@ -90,8 +90,8 @@ var locationsArray = [
     icon: icon1,
     dates: [
       {
-        from: new Date(2014, 12, 10),
-        to: new Date(2014, 12, 12)
+        from: new Date(2015, 2, 13),
+        to: new Date(2015, 2, 15)
       }
     ]
   },
@@ -128,8 +128,8 @@ var locationsArray = [
     icon: icon1,
     dates: [
       {
-        from: new Date(2014, 12, 10),
-        to: new Date(2014, 12, 12)
+        from: new Date(2014, 11, 8),
+        to: new Date(2014, 11, 10)
       }
     ]
   },
