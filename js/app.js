@@ -1,20 +1,5 @@
 'use strict';
       function initialize() {
-        var styleArray = [
-          {
-            featureType: "road",
-            stylers: [
-              { visibility: "off" }
-            ]
-          }
-        ];
-
-        var mapOptions = {
-          center: { lat: 52.239876, lng: 21.018622},
-          zoom: 6,
-          mapTypeId: google.maps.MapTypeId.TERRAIN,
-          styles: styleArray
-        };
 
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
@@ -56,8 +41,6 @@
 
         google.maps.event.addListener(map, 'zoom_changed', function() {
             var z = map.getZoom();
-            console.log(z);
-
             var updatedScale = getUpdatedScale(z);
 
             for (var i = 0; i < markers.length; i++) {
@@ -74,7 +57,6 @@
                 fillOpacity: 1,
               }
               );
-              console.log(updatedScale);
             }
         });
       }
