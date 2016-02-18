@@ -47,6 +47,13 @@ var locationsArray = [
       lat: 54.682312, 
       lng: 25.261172
     }
+  },   
+  {
+    title: "Troki",
+    position: {
+      lat: 54.641163, 
+      lng: 24.934007
+    }
   },  
   {
     title: "Kowno",
