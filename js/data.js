@@ -181,5 +181,11 @@ var locationsArray = [
       lng: 22.207307
     }
   },
-
+  {
+    title: "Bruksela",
+    position: {
+      lat: 50.850402, 
+      lng: 4.352043
+    }
+  }
 ];
