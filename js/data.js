@@ -187,5 +187,12 @@ var locationsArray = [
       lat: 50.850402, 
       lng: 4.352043
     }
+  },  
+  {
+    title: "Sandomierz",
+    position: {
+      lat: 50.680612, 
+      lng: 21.753336
+    }
   }
 ];
