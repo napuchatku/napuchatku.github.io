@@ -194,5 +194,19 @@ var locationsArray = [
       lat: 50.680612, 
       lng: 21.753336
     }
+  },  
+  {
+    title: "’s-Hertogenbosch",
+    position: {
+      lat: 51.697502, 
+      lng: 5.318858
+    }
+  },
+  {
+    title: "Utrecht",
+    position: {
+      lat: 52.087963, 
+      lng: 5.114419
+    }
   }
 ];
