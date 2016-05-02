@@ -208,5 +208,12 @@ var locationsArray = [
       lat: 52.087963, 
       lng: 5.114419
     }
+  },
+  {
+    title: "Drohiczyn",
+    position: {
+      lat: 52.400448, 
+      lng: 22.658670
+    }
   }
 ];
