@@ -215,5 +215,12 @@ var locationsArray = [
       lat: 52.400448, 
       lng: 22.658670
     }
+  },  
+  {
+    title: "Kazimierz Dolny",
+    position: {
+      lat: 51.318366, 
+      lng: 21.954256
+    }
   }
 ];
