@@ -222,5 +222,19 @@ var locationsArray = [
       lat: 51.318366, 
       lng: 21.954256
     }
+  },  
+  {
+    title: "Tallin",
+    position: {
+      lat: 59.438210, 
+      lng: 24.749227
+    }
+  },  
+  {
+    title: "Pärnu",
+    position: {
+      lat: 58.385657, 
+      lng: 24.497004
+    }
   }
 ];
