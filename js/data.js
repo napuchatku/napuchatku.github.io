@@ -236,5 +236,12 @@ var locationsArray = [
       lat: 58.385657, 
       lng: 24.497004
     }
+  },
+  {
+    title: "Berlin",
+    position: {
+      lat: 52.529262, 
+      lng: 13.400596
+    }
   }
 ];
