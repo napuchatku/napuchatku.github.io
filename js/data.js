@@ -243,5 +243,12 @@ var locationsArray = [
       lat: 52.529262, 
       lng: 13.400596
     }
+  },  
+  {
+    title: "Łódź",
+    position: {
+      lat: 51.777770, 
+      lng: 19.454499
+    }
   }
 ];
