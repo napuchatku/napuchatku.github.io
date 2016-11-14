@@ -250,5 +250,12 @@ var locationsArray = [
       lat: 51.777770, 
       lng: 19.454499
     }
+  },  
+  {
+    title: "Londyn",
+    position: {
+      lat: 51.506767, 
+      lng: -0.125636
+    }
   }
 ];
