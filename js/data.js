@@ -257,5 +257,12 @@ var locationsArray = [
       lat: 51.506767, 
       lng: -0.125636
     }
+  },  
+  {
+    title: "Wrocław",
+    position: {
+      lat: 51.113265, 
+      lng: 17.034778
+    }
   }
 ];
