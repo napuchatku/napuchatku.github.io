@@ -263,6 +263,35 @@ var locationsArray = [
     position: {
       lat: 51.113265, 
       lng: 17.034778
+  },
+  {
+    title: "Neapol",
+    position: {
+      lat: 40.846232,
+      lng: 14.250447
     }
-  }
+  },  
+  {
+    title: "Caserta",
+    position: { 
+      lat: 41.073645,
+      lng: 14.327018
+    }
+  },  
+  {
+    title: "Pompeje",
+    position: {
+      lat: 40.752470,
+      lng: 14.491107
+    }
+  },  
+  {
+    title: "Sorrento",
+    position: {
+      lat: 40.626766,
+      lng: 14.370213
+    }
+  },
+
+
 ];
