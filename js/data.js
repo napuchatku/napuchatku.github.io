@@ -263,6 +263,7 @@ var locationsArray = [
     position: {
       lat: 51.113265, 
       lng: 17.034778
+    },
   },
   {
     title: "Neapol",
