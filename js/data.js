@@ -293,6 +293,11 @@ var locationsArray = [
       lng: 14.370213
     }
   },
-
-
+  {
+    title: "Opole",
+    position: {
+      lat: 50.668822,
+      lng: 17.918154
+    }
+  }
 ];
