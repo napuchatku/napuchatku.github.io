@@ -299,5 +299,33 @@ var locationsArray = [
       lat: 50.668822,
       lng: 17.918154
     }
+  },
+  {
+    title: "Kijów",
+    position: {
+      lat: 50.449633,
+      lng: 30.527193
+    }
+  },
+  {
+    title: "Czarnobyl",
+    position: {
+      lat: 51.275993,
+      lng: 30.222641
+    }
+  },
+  {
+    title: "Prypeć",
+    position: {
+      lat: 51.407634,
+      lng: 30.055552
+    }
+  },
+  {
+    title: "Meżyhiria",
+    position: {
+      lat: 50.614713,
+      lng: 30.473903
+    }
   }
 ];
