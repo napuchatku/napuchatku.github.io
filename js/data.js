@@ -362,5 +362,12 @@ var locationsArray = [
       lat: 54.683073,
       lng: 18.714020
     }
+  },
+  {
+    title: "Toruń",
+    position: {
+      lat: 53.010402,
+      lng: 18.606429
+    }
   }
 ];
