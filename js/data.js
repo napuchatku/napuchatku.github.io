@@ -327,5 +327,40 @@ var locationsArray = [
       lat: 50.614713,
       lng: 30.473903
     }
+  },
+  {
+    title: "Gdynia",
+    position: {
+      lat: 54.519545,
+      lng: 18.549092
+    }
+  },
+  {
+    title: "Kuźnica",
+    position: {
+      lat: 54.734558,
+      lng: 18.581562
+    }
+  },
+  {
+    title: "Hel",
+    position: {
+      lat: 54.607055,
+      lng: 18.800756
+    }
+  }, 
+  {
+    title: "Jastarnia",
+    position: {
+      lat: 54.700520,
+      lng: 18.672425
+    }
+  },
+  {
+    title: "Jurata",
+    position: {
+      lat: 54.683073,
+      lng: 18.714020
+    }
   }
 ];
