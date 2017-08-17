@@ -369,5 +369,54 @@ var locationsArray = [
       lat: 53.010402,
       lng: 18.606429
     }
+  },
+  {
+    title: "Praga",
+    position: {
+      lat: 50.075012,
+      lng: 14.440898
+    }
+  },
+  {
+    title: "Brno",
+    position: {
+      lat: 49.197499,
+      lng: 16.600613
+    }
+  },
+  {
+    title: "Kromieryż",
+    position: {
+      lat: 49.299382,
+      lng: 17.393710
+    }
+  },
+  {
+    title: "Ołomuniec",
+    position: {
+      lat: 49.594682,
+      lng: 17.254814
+    }
+  },
+  {
+    title: "Mikułów",
+    position: {
+      lat: 48.806472,
+      lng: 16.636645
+    }
+  },
+  {
+    title: "Lednice",
+    position: {
+      lat: 48.801512,
+      lng: 16.807123
+    }
+  },  
+  {
+    title: "Valtice",
+    position: {
+      lat: 48.740504,
+      lng: 16.756015
+    }
   }
 ];
