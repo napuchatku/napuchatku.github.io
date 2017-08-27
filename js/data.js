@@ -411,12 +411,19 @@ var locationsArray = [
       lat: 48.801512,
       lng: 16.807123
     }
-  },  
+  },
   {
     title: "Valtice",
     position: {
       lat: 48.740504,
       lng: 16.756015
+    }
+  },
+  {
+    title: "Palmiry",
+    position: {
+      lat: 52.331940,
+      lng: 20.745430
     }
   }
 ];
