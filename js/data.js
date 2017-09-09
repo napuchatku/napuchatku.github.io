@@ -425,5 +425,12 @@ var locationsArray = [
       lat: 52.331940,
       lng: 20.745430
     }
+  },
+  {
+    title: "Rębkowo",
+    position: {
+      lat: 52.636842,
+      lng: 20.914200
+    }
   }
 ];
