@@ -432,5 +432,26 @@ var locationsArray = [
       lat: 52.636842,
       lng: 20.914200
     }
+  },  
+  {
+    title: "Śnieżka",
+    position: {
+      lat: 50.736174,
+      lng: 15.739859
+    }
+  },
+  {
+    title: "Karpacz",
+    position: {
+      lat: 50.776993,
+      lng: 15.755809
+    }
+  },
+  {
+    title: "Kowary",
+    position: {
+      lat: 50.793636,
+      lng: 15.834599
+    }
   }
 ];
