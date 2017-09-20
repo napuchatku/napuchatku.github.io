@@ -453,5 +453,19 @@ var locationsArray = [
       lat: 50.793636,
       lng: 15.834599
     }
+  },
+  {
+    title: "Malá Úpa",
+    position: {
+      lat: 50.745044,
+      lng: 15.820747
+    }
+  },
+  {
+    title: "Jelenia Góra",
+    position: {
+      lat: 50.902919,
+      lng: 15.734362
+    }
   }
 ];
