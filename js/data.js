@@ -541,14 +541,14 @@ var locationsArray = [
   {
     title: "Dubicze Cerkiewne",
     position: {
-      lat: 52.654498
+      lat: 52.654498,
       lng: 23.429436
     }
   },
-    {
+  {
     title: "Teremiski",
     position: {
-      lat: 52.732186
+      lat: 52.732186,
       lng: 23.764638
     }
   }
