@@ -467,5 +467,89 @@ var locationsArray = [
       lat: 50.902919,
       lng: 15.734362
     }
+  },
+  {
+    title: "Koterka",
+    position: {
+      lat: 52.354513,
+      lng: 23.206216
+    }
+  },
+  {
+    title: "Węgrów",
+    position: {
+      lat: 52.398951,
+      lng: 22.017626
+    }
+  },
+  {
+    title: "Nowa Sucha",
+    position: {
+      lat: 52.253453,
+      lng: 22.001478
+    }
+  },
+  {
+    title: "Hajnówka",
+    position: {
+      lat: 52.737724,
+      lng: 23.591633
+    }
+  },
+  {
+    title: "Hajnówka",
+    position: {
+      lat: 52.737724,
+      lng: 23.591633
+    }
+  },
+  {
+    title: "Siemianówka",
+    position: {
+      lat: 52.901959,
+      lng: 23.840542
+    }
+  },
+  {
+    title: "Topiło",
+    position: {
+      lat: 52.637899,
+      lng: 23.622690
+    }
+  },
+  {
+    title: "Sosnówka",
+    position: {
+      lat: 52.676647,
+      lng: 23.566039
+    }
+  },
+  {
+    title: "Stary Kornin",
+    position: {
+      lat: 52.706363,
+      lng: 23.447752
+    }
+  },
+  {
+    title: "Kleszczele",
+    position: {
+      lat: 52.574346,
+      lng: 23.326104
+    }
+  },
+  {
+    title: "Dubicze Cerkiewne",
+    position: {
+      lat: 52.654498
+      lng: 23.429436
+    }
+  },
+    {
+    title: "Teremiski",
+    position: {
+      lat: 52.732186
+      lng: 23.764638
+    }
   }
 ];
